@@ -12,7 +12,6 @@
 		5E3706A01FB28BE900E8E315 /* SwapiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E37069F1FB28BE900E8E315 /* SwapiTests.swift */; };
 		5E3706AC1FB28C1700E8E315 /* Id.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3706AB1FB28C1700E8E315 /* Id.swift */; };
 		5E3706B91FB28D7000E8E315 /* Prelude.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E3706B41FB28C8600E8E315 /* Prelude.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		5E3706BD1FB2905700E8E315 /* Swapi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3706BC1FB2905700E8E315 /* Swapi.swift */; };
 		5E3706C11FB290CB00E8E315 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3706C01FB290CB00E8E315 /* Person.swift */; };
 		5E3706C31FB291CA00E8E315 /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3706C21FB291CA00E8E315 /* Film.swift */; };
 		5E3706C51FB291FA00E8E315 /* Species.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3706C41FB291FA00E8E315 /* Species.swift */; };
@@ -25,8 +24,6 @@
 		5EC4ED451FB7AABC00E63D03 /* VehicleSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC4ED441FB7AABC00E63D03 /* VehicleSchema.swift */; };
 		5EC4ED471FB7AE1E00E63D03 /* SpeciesSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC4ED461FB7AE1E00E63D03 /* SpeciesSchema.swift */; };
 		5EC4ED491FB7B0FE00E63D03 /* PlanetSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC4ED481FB7B0FE00E63D03 /* PlanetSchema.swift */; };
-		5EC4ED4B1FB7B37200E63D03 /* SwapiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC4ED4A1FB7B37200E63D03 /* SwapiError.swift */; };
-		5EC4ED4D1FB7C55300E63D03 /* PeopleFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC4ED4C1FB7C55300E63D03 /* PeopleFetcher.swift */; };
 		5EF34EC51FB76FB200914587 /* URLSession+Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF34EC41FB76FB200914587 /* URLSession+Async.swift */; };
 /* End PBXBuildFile section */
 
@@ -63,7 +60,6 @@
 		5E3706A11FB28BE900E8E315 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E3706AB1FB28C1700E8E315 /* Id.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Id.swift; sourceTree = "<group>"; };
 		5E3706AE1FB28C8500E8E315 /* Prelude.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Prelude.xcodeproj; path = ../Prelude/Prelude.xcodeproj; sourceTree = "<group>"; };
-		5E3706BC1FB2905700E8E315 /* Swapi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swapi.swift; sourceTree = "<group>"; };
 		5E3706C01FB290CB00E8E315 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		5E3706C21FB291CA00E8E315 /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
 		5E3706C41FB291FA00E8E315 /* Species.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Species.swift; sourceTree = "<group>"; };
@@ -76,8 +72,6 @@
 		5EC4ED441FB7AABC00E63D03 /* VehicleSchema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleSchema.swift; sourceTree = "<group>"; };
 		5EC4ED461FB7AE1E00E63D03 /* SpeciesSchema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeciesSchema.swift; sourceTree = "<group>"; };
 		5EC4ED481FB7B0FE00E63D03 /* PlanetSchema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetSchema.swift; sourceTree = "<group>"; };
-		5EC4ED4A1FB7B37200E63D03 /* SwapiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapiError.swift; sourceTree = "<group>"; };
-		5EC4ED4C1FB7C55300E63D03 /* PeopleFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleFetcher.swift; sourceTree = "<group>"; };
 		5EF34EC41FB76FB200914587 /* URLSession+Async.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Async.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -125,10 +119,7 @@
 			children = (
 				5E3706951FB28BE900E8E315 /* Info.plist */,
 				5E3706AB1FB28C1700E8E315 /* Id.swift */,
-				5E3706BC1FB2905700E8E315 /* Swapi.swift */,
 				5E0E9B001FD1EFCA00531A7B /* Fetcher.swift */,
-				5EC4ED4C1FB7C55300E63D03 /* PeopleFetcher.swift */,
-				5EC4ED4A1FB7B37200E63D03 /* SwapiError.swift */,
 				5E5CAB641FB6B47400CD5CCB /* Protocols */,
 				5E5CAB651FB6B48300CD5CCB /* Schemas */,
 				5EF34EC41FB76FB200914587 /* URLSession+Async.swift */,
@@ -321,8 +312,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EC4ED4D1FB7C55300E63D03 /* PeopleFetcher.swift in Sources */,
-				5E3706BD1FB2905700E8E315 /* Swapi.swift in Sources */,
 				5E3706C31FB291CA00E8E315 /* Film.swift in Sources */,
 				5EC4ED431FB7A41000E63D03 /* StarshipSchema.swift in Sources */,
 				5EC4ED471FB7AE1E00E63D03 /* SpeciesSchema.swift in Sources */,
@@ -331,7 +320,6 @@
 				5EC4ED3F1FB7931500E63D03 /* FilmSchema.swift in Sources */,
 				5E3706C71FB2922900E8E315 /* Starship.swift in Sources */,
 				5E3706C91FB2928700E8E315 /* Vehicle.swift in Sources */,
-				5EC4ED4B1FB7B37200E63D03 /* SwapiError.swift in Sources */,
 				5EC4ED491FB7B0FE00E63D03 /* PlanetSchema.swift in Sources */,
 				5E5CAB611FB6A75000CD5CCB /* PersonSchema.swift in Sources */,
 				5EF34EC51FB76FB200914587 /* URLSession+Async.swift in Sources */,

@@ -10,7 +10,7 @@ import struct   Foundation.URL
 import struct   Foundation.URLRequest
 import class    Foundation.DispatchQueue
 import struct   Prelude.Async
-import protocol Prelude.Resource
+import struct   Prelude.Resource
 import protocol Prelude.Monoid
 
 public final class Fetcher<Element, ElementSchema: Decodable> {
@@ -30,7 +30,7 @@ public final class Fetcher<Element, ElementSchema: Decodable> {
   }
   
   public func loadNext() -> Async<()> {
-    let load = accessQueue.sync { schema.next }.map(Schema.Resource.init)?
+    let load = accessQueue.sync { schema.next }.map(Schema.resource)?
       .loadFromNetwork()
       .transferred(to: accessQueue)
       .map { newSchema in self.schema = Schema.combine(self.schema, newSchema) }
@@ -71,18 +71,8 @@ extension Fetcher.Schema: Monoid {
 
 extension Fetcher.Schema {
   
-  struct Resource {
-    var url: URL
-  }
-  
-}
-
-extension Fetcher.Schema.Resource: Prelude.Resource {
-  
-  typealias Decoded = Fetcher.Schema
-  
-  var request: URLRequest {
-    return URLRequest(url: url)
+  static func resource(url: URL) -> Resource<Fetcher.Schema> {
+    return Resource(url: url)
   }
   
 }

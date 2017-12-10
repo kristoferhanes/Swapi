@@ -8,7 +8,7 @@
 
 import struct Foundation.Date
 import struct Foundation.URL
-import struct Prelude.AnyResource
+import struct Prelude.Resource
 
 public struct FilmSchema: Decodable {
   var title: String
@@ -29,8 +29,8 @@ public struct FilmSchema: Decodable {
 
 extension FilmSchema {
   
-  static func resource(for id: Id<Film>) -> AnyResource<FilmSchema> {
-    return AnyResource(url: URL(string: "https://swapi.co/api/films/\(id.id)/")!)
+  static func resource(for id: Id<Film>) -> Resource<FilmSchema> {
+    return Resource(url: URL(string: "https://swapi.co/api/films/\(id.id)/")!)
   }
 }
 

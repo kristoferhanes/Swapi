@@ -8,7 +8,7 @@
 
 import struct Foundation.Date
 import struct Foundation.URL
-import struct Prelude.AnyResource
+import struct Prelude.Resource
 
 public struct PersonSchema: Decodable {
   var name: String
@@ -31,8 +31,8 @@ public struct PersonSchema: Decodable {
 
 extension PersonSchema {
   
-  static func resource(for id: Id<Person>) -> AnyResource<PersonSchema> {
-    return AnyResource(url: URL(string: "https://swapi.co/api/people/\(id.id)/")!)
+  static func resource(for id: Id<Person>) -> Resource<PersonSchema> {
+    return Resource(url: URL(string: "https://swapi.co/api/people/\(id.id)/")!)
   }
     
 }
